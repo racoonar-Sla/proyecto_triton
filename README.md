@@ -10,12 +10,12 @@ El sistema destaca por su enfoque en programación asíncrona, robustez en la fr
 
 | Integrante | Rol Técnico | Responsabilidades Principales |
 | :--- | :--- | :--- |
-| **Integrante 1** | Ingeniero de Robustez y Excepciones | Excepciones semánticas (`exceptions.py`) y sanitización temprana en `argparse` (`sanitizer.py`). |
-| **Integrante 2** | Ingeniero de Concurrencia | Motor de red asíncrono con `httpx` y orquestación paralela con `asyncio.TaskGroup` (`core.py`). |
-| **Integrante 3** | Ingeniero de Formateo JSON | Serialización recursiva forense de `ExceptionGroups` y metadatos dinámicos en formato NDJSON (`logging_engine.py`). |
-| **Integrante 4** | Ingeniero de Almacenamiento | Pipeline asíncrono no bloqueante (`QueueHandler/Listener`) y rollover GZIP con Hardening de Idempotencia. |
-| **Integrante 5** | Coordinador de Integración y CLI | Punto de entrada CLI, inyección de validadores, captura quirúrgica y limpieza PEP 765 (`app_operator.py`). |
-| **Integrante 6** | Ingeniero de Caos y Forense | Suite automatizada de inyección de fallas concurrentes (`chaos_test.py`) y auditoría forense de descompresión `.gz` (`forensic_test.py`)[cite: 3]. |
+| **Integrante 1** | Ingeniero de Robustez y Excepciones - Matías Sebastian Funes | Excepciones semánticas (`exceptions.py`) y sanitización temprana en `argparse` (`sanitizer.py`). |
+| **Integrante 2** | Ingeniero de Concurrencia - Javier Alejandro Quiroga | Motor de red asíncrono con `httpx` y orquestación paralela con `asyncio.TaskGroup` (`core.py`). |
+| **Integrante 3** | Ingeniero de Formateo JSON - Mauricio Jesús Goroso Romano | Serialización recursiva forense de `ExceptionGroups` y metadatos dinámicos en formato NDJSON (`logging_engine.py`). |
+| **Integrante 4** | Ingeniero de Almacenamiento - Rafael Adán Cruz | Pipeline asíncrono no bloqueante (`QueueHandler/Listener`) y rollover GZIP con Hardening de Idempotencia. |
+| **Integrante 5** | Coordinador de Integración y CLI - Noemí Barragan | Punto de entrada CLI, inyección de validadores, captura quirúrgica y limpieza PEP 765 (`app_operator.py`). |
+| **Integrante 6** | Ingeniero de Caos y Forense - Roberto Ezequiel Choque Martínez | Suite automatizada de inyección de fallas concurrentes (`chaos_test.py`) y auditoría forense de descompresión `.gz` (`forensic_test.py`)[cite: 3]. |
 
 ---
 
