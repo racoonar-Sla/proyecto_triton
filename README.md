@@ -53,7 +53,7 @@ graph TD
     style Logging fill:#eafaf1,stroke:#27ae60,stroke-width:2px
 ```
 
-🛠️ Requisitos Previos e Instalación
+## 🛠️ Requisitos Previos e Instalación
 Siga estas instrucciones para configurar su entorno de desarrollo local y reproducir la ejecución de forma totalmente aislada garantizando las dependencias (ej. httpx)[cite: 3].
 
 1. Clonar el Repositorio 
@@ -77,7 +77,7 @@ venv\Scripts\Activate.ps1
 pip install --upgrade pip
 pip install -r requirements.txt
 
-💻 Comandos de Ejecución (Guía de Pruebas)El programa oficial de la CLI debe ejecutarse siempre como un módulo desde la raíz del proyecto para evitar errores de importación y protegernos contra el Local Shadowing.  Escenario A: Operación Nominal Completa (Éxito Rotundo)Ejecuta la CLI consultando los proveedores de nube con parámetros nominales[cite: 3]:
+## 💻 Comandos de Ejecución (Guía de Pruebas)El programa oficial de la CLI debe ejecutarse siempre como un módulo desde la raíz del proyecto para evitar errores de importación y protegernos contra el Local Shadowing.  Escenario A: Operación Nominal Completa (Éxito Rotundo)Ejecuta la CLI consultando los proveedores de nube con parámetros nominales[cite: 3]:
 
 python -m src.app_operator --mode nominal --timeout 4.5 --cluster cluster-us-east-01
 
@@ -97,7 +97,7 @@ python -m src.app_operator --mode emergency --timeout 0.1
 
 Comportamiento esperado: El sistema levantará un ExceptionGroup con los errores de red concurrentes. El logger capturará y formateará de manera recursiva la jerarquía de excepciones en un objeto JSON sin corromper la memoria[cite: 3].
 
-🧪 Pruebas Automatizadas SRE (Suite Forense)
+## 🧪 Pruebas Automatizadas SRE (Suite Forense)
 El proyecto incluye una suite de ingeniería de caos para estrés concurrente y validación de compresión de logs. Ejecútelos desde la raíz:
 
 Simulación de Caos (Múltiples procesos CLI):
@@ -110,9 +110,9 @@ python tests/forensic_test.py
 
 📐 Estándar de Código Limpio y Linters (PEP 8)El código cumple con los más altos estándares estilísticos (PEP 8). Para comprobar de forma automatizada la calidad del software antes de hacer entregas:  
 
-# Análisis estilístico PEP 8 con Flake8
+## Análisis estilístico PEP 8 con Flake8
 flake8 src/ tests/
 
-# Análisis lógico, de variables y puntuación de calidad con Pylint
+## Análisis lógico, de variables y puntuación de calidad con Pylint
 pylint src/ tests/
 
